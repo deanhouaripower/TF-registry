@@ -10,8 +10,17 @@ variable "ami" {
 
 variable "fwname" {
   type = string
+  default = "secgroup"
 }
-variable "inport" {}
-variable "inprot" {}
-variable "egport" {}
-variable "egprot" {}
+variable "inport" {
+  default = 0
+}
+variable "inprot" {
+  default = "-1"
+}
+variable "egport" {
+  default = 0
+}
+variable "egprot" {
+  default = "-1"
+}
